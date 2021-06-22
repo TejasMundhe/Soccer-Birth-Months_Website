@@ -3,18 +3,18 @@
     {
       "path": "about.html",
       "title": "About this site",
-      "description": "Some additional details about the website",
+      "description": "Details about myself and this project",
       "author": [],
-      "contents": "\r\n\r\n\r\n\r\n",
-      "last_modified": "2021-06-21T20:37:46-04:00"
+      "contents": "\r\nAbout Me\r\nHi, my name is Tejas Mundhe and I am an incoming freshman at Walnut Hills High School. I enjoy playing soccer and swimming as well as having a passion for computer science.\r\nAbout the Project\r\nThis project was made through Kane’s Free High School Data Science Bootcamp to explore the popular theory that more elite athletes are born in January. To investigate this I sorted the number of Euro 2021 players birthdays for each month and made that data into a bar graph\r\nConclusion\r\nAfter making and publishing this plot I learned that a comparable number of players were born in each month with January not being a outlier, proving the theory that more elite athletes are born in January false.\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-21T22:26:39-04:00"
     },
     {
       "path": "index.html",
       "title": "Euro 2020 Player Birth Months",
-      "description": "Welcome to the website. I hope you enjoy it!\n",
+      "description": "A plot of the number of soccer players playing in Euro 2021 that are born in each month to investigate if more elite athletes are born in January.\n",
       "author": [],
-      "contents": "\r\n\r\n```{.r .distill-force-highlighting-css}\r\n\r\n\r\n",
-      "last_modified": "2021-06-21T20:37:53-04:00"
+      "contents": "\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+      "last_modified": "2021-06-21T22:14:44-04:00"
     }
   ],
   "collections": []

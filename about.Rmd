@@ -1,10 +1,17 @@
 ---
 title: "About this site"
 description: |
-  Some additional details about the website
+  Details about myself and this project
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
+## About Me
+Hi, my name is **Tejas Mundhe** and I am an incoming freshman at Walnut Hills High School. I enjoy playing soccer and swimming as well as having a passion for computer science.
 
+## About the Project
+This project was made through [Kane’s Free High School Data Science Bootcamp](https://bootcamp.davidkane.info) to explore the popular theory that more elite athletes are born in January. To investigate this I sorted the number of Euro 2021 players birthdays for each month and made that data into a bar graph
+
+## Conclusion
+After making and publishing this plot I learned that a comparable number of players were born in each month with January not being a outlier, proving the theory that more elite athletes are born in January false.

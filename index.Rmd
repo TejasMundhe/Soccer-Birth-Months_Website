@@ -1,7 +1,7 @@
 ---
 title: "Euro 2020 Player Birth Months"
 description: |
-  Welcome to the website. I hope you enjoy it!
+  A plot of the number of soccer players playing in Euro 2021 that are born in each month to investigate if more elite athletes are born in January.
 site: distill::distill_website
 ---
 
@@ -16,7 +16,30 @@ library(tidyverse)
 # https://rstudio.github.io/distill/publish_website.html#github-pages
 
 ```
-
+```{r, echo = FALSE}
+x <- read_csv("birthdates.csv", col_types = cols(value = col_character()))
+```
+```{r, include = FALSE}
+clean_data <- x %>%
+  mutate(date = parse_date(str_sub(value, 2, 11))) %>% 
+  mutate(raw_month = months(date)) %>% 
+  mutate(month = parse_factor(raw_month, levels = month.name))
+```
+```{r, echo = FALSE}
+clean_data %>% 
+  group_by(month) %>% 
+  arrange(month) %>%
+  drop_na %>%
+  summarize(total = n()) %>%
+  ggplot(mapping = aes(x = fct_rev(month), y = total, fill = month)) +
+         coord_flip()+
+         geom_col() +
+         labs(title = "Euro 2021 Soccer Players by Birth Month",
+              subtitle = "Elite players are not more likely to be born in January",
+              x = "Month",
+              y = "Number of Players",
+              fill = "Month (by color)",
+              caption = "Source: Wikipedia")
 
 ```
 
